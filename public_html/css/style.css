@@ -1,0 +1,112 @@
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1em;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+    margin-top: -0.2em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.introduction > p,
+.location > p,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.questions-section > h2 {
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
+
+h2{
+  font-size:1em;
+}
+
+.introduction-section>h1,
+.location-section > h1,
+.questions-section > h1
+{
+  color: #538B8D;
+}
+
+.masthead {
+    padding: 10em 0;
+    background-image: url(https://ununsplash.imgix.net/uploads/141202616623001715bb7/c1b3b9b0?dpr=2&fit=crop&fm=jpg&h=675&q=75&w=1050);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+    text-shadow: 1px 1px 1px #74A1A8 , 5px 3px 3px #538B8D;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1em;
+}
+
+.masthead-heading {
+    margin-top: -0.2em;
+}
+
+.content-footer,
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.social > li {
+    display: inline-block;
+    padding-right: 1em;
+    color:white;
+}
+
+a {
+  color:white;
+}
+
+.content-footer {
+  background-color: #538B8D;
+  max-width: 100%;
+  padding: 2em;
+}
+
+/* Screen size info */
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 3em 0;
+    }
+    .masthead-heading {
+        font-size: 3em;
+    }
+  .footer{
+      padding: 3em 0;
+  }
+  .social >li{
+    display: block;
+  }
+}
