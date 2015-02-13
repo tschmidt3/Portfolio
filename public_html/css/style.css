@@ -4,7 +4,7 @@ body {
     font-size: 1em;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
-
+/*Header section*/
 .masthead-intro {
     margin-bottom: 0.1em;
     font-family: "Gentium Book Basic", Georgia, serif;
@@ -20,6 +20,26 @@ body {
     text-transform: uppercase;
 }
 
+.masthead {
+    padding: 10em 0;
+    background-image: url(https://ununsplash.imgix.net/uploads/141202616623001715bb7/c1b3b9b0?dpr=2&fit=crop&fm=jpg&h=675&q=75&w=1050);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+    text-shadow: 1px 1px 1px #74A1A8 , 5px 3px 3px #538B8D;
+}
+
+
+/*About me*/
+
+.introduction-section,
+.location-section,
+.questions-section{
+    float: left;
+    width: 27%;
+    margin: 3%; 
+    text-align: center
+}
 .introduction > p,
 .location > p,
 .content-footer > p {
@@ -28,7 +48,7 @@ body {
     letter-spacing: 0.05em;
 }
 
-.questions-section > h2 {
+h2 {
     /* Typography Declarations */
     font-family: "Gentium Book Basic", Georgia, serif;
     font-size: 1.2em;
@@ -41,47 +61,58 @@ body {
   text-align: center;
 }
 
-h2{
-  font-size:1em;
-}
-
 .introduction-section>h1,
 .location-section > h1,
-.questions-section > h1
+.questions-section > h1,
+.Projects  h1
 {
   color: #538B8D;
 }
 
-.masthead {
-    padding: 10em 0;
-    background-image: url(https://ununsplash.imgix.net/uploads/141202616623001715bb7/c1b3b9b0?dpr=2&fit=crop&fm=jpg&h=675&q=75&w=1050);
-    background-repeat: no-repeat;
-    background-size:cover;
-    color:white;
-    text-shadow: 1px 1px 1px #74A1A8 , 5px 3px 3px #538B8D;
+/*Projects*/
+
+.Projects {
+    text-align: center;
+    clear: both;
 }
 
-.masthead-intro {
-    margin-bottom: 0.1em;
+.Projects h1{
+    padding-top: 1em;
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-color: #538B8D;
 }
 
-.masthead-heading {
-    margin-top: -0.2em;
+.project-content{
+    float: left;
+    width: 46%;
+    margin: 0 2%;    
 }
 
-.content-footer,
-.introduction-section,
-.location-section,
-.questions-section {
+.project-content img{
+    max-width: 100%;
+    width: auto;
+    height: 400px;
+    width: auto;
+    background-image: cover;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: black;
+    border-radius: 1em;
+}
+/*Footer*/
+.content-footer
+ {
     max-width: 38em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
+    clear: both;
 }
 
 .social > li {
     display: inline-block;
-    padding-right: 1em;
+    padding-right: 4em;
     color:white;
 }
 
@@ -105,8 +136,38 @@ a {
     }
   .footer{
       padding: 3em 0;
-  }
+    }
   .social >li{
     display: block;
-  }
+    padding: 1em
+    }
+    .introduction-section,
+    .location-section,
+    .questions-section,
+    .project-content{
+        float: left;
+        width: 100%;
+        margin: 1%; 
+        text-align: center
+    }
+    .introduction > p,
+    .location > p,
+    .content-footer > p {
+        /* Typography Declarations */
+        font-weight: 300;
+        letter-spacing: 0.05em;
+    }
+
+    h2 {
+        /* Typography Declarations */
+        font-family: "Gentium Book Basic", Georgia, serif;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    
+    .project-content img{
+        max-width: 75%;
+        height: auto;
+    }
+    
 }
